@@ -3,9 +3,6 @@
 #include <random>
 #include <numeric>
 
-//god bless aliasing
-using vec = std::vector;
-using string = std::string;
 
 Model::Model(const vec<string>& vnames, const vec<double>& rates,
     const vec<double>& inits, const vec<vec<double>>& tmat,

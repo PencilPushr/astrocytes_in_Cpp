@@ -2,6 +2,6 @@
 
 int main()
 {
-	std::cout << "I hate stochastic reactions" std::endl;
+	std::cout << "I hate stochastic reactions" << std::endl;
 	return 0;
 }

@@ -3,9 +3,16 @@
 
 #include "../util/includes.h"
 
-//alias so I don't have to write so much shit
-using vec = std::vector;
+//templated alias of vec
+template<typename T>
+using vec = std::vector<T>;
 using string = std::string;
+
+template <typename T
+struct ModelData
+{
+    vec<vec<
+};
 
 class Model {
 public:
