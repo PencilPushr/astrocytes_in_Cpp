@@ -8,10 +8,10 @@ template<typename T>
 using vec = std::vector<T>;
 using string = std::string;
 
-template <typename T
+template <typename T>
 struct ModelData
 {
-    vec<vec<
+    vec<vec<T>> values;  // Store the values of all variables at each repetition
 };
 
 class Model {

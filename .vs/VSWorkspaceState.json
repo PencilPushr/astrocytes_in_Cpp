@@ -8,8 +8,9 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\cfgsys",
     "\\util"
   ],
-  "SelectedNode": "\\src\\numcpp.h",
+  "SelectedNode": "\\src\\Model.cpp",
   "PreviewInSolutionExplorer": false
 }
