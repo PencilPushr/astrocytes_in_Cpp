@@ -87,6 +87,7 @@ private:
 
     void File::updateSmallFile(const std::string& content)
     {
+        // 
         std::ifstream inputFile(file_path_);
         std::ostringstream buffer;
         buffer << inputFile.rdbuf();

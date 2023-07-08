@@ -24,7 +24,6 @@ endif()
 # source_files at CMakeLists.txt:9 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/ajval/Documents/C++/astrocytes_in_Cpp/src/*.cpp")
 set(OLD_GLOB
-  "C:/Users/ajval/Documents/C++/astrocytes_in_Cpp/src/Model.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -34,7 +33,6 @@ endif()
 # source_files at CMakeLists.txt:9 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/ajval/Documents/C++/astrocytes_in_Cpp/src/*.h")
 set(OLD_GLOB
-  "C:/Users/ajval/Documents/C++/astrocytes_in_Cpp/src/Model.h"
   "C:/Users/ajval/Documents/C++/astrocytes_in_Cpp/src/numcpp.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
