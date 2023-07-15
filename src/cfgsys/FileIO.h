@@ -49,7 +49,7 @@ public:
     void File::update(const std::string& content) 
     {
         // Get the size of the file
-        std::ifstream inputFile(file_path_, std::ios::ate | std::ios::binary);
+        std::ifstream inputFile(filename, std::ios::ate | std::ios::binary);
         std::streamsize fileSize = inputFile.tellg();
         inputFile.close();
 
@@ -88,7 +88,7 @@ private:
     void File::updateSmallFile(const std::string& content)
     {
         // 
-        std::ifstream inputFile(file_path_);
+        std::ifstream inputFile(filename);
         std::ostringstream buffer;
         buffer << inputFile.rdbuf();
         std::string fileContent = buffer.str();
@@ -97,7 +97,7 @@ private:
         size_t insertPos = 10; // Insert at position 10
         fileContent.insert(insertPos, content);
 
-        std::ofstream outputFile(file_path_);
+        std::ofstream outputFile(filename);
         outputFile << fileContent;
         outputFile.close();
     }
@@ -105,17 +105,17 @@ private:
     void File::updateLargeFile(const std::string& content) 
     {
         // Generate a temporary file path
-        std::string tempFilePath = file_path_ + ".tmp";
+        std::string tempFilePath = filename + ".tmp";
 
         // Write the updated content to the temporary file
         std::ofstream tempFile(tempFilePath);
         tempFile << content;
 
         // Open the input file for reading in binary mode
-        std::ifstream inputFile(file_path_, std::ios::binary);
+        std::ifstream inputFile(filename, std::ios::binary);
 
         // Open the output file for writing in binary mode
-        std::ofstream outputFile(file_path_ + ".tmp", std::ios::binary);
+        std::ofstream outputFile(filename + ".tmp", std::ios::binary);
 
         // Write the original file content to the output file
         outputFile << inputFile.rdbuf();
@@ -125,7 +125,7 @@ private:
         outputFile.close();
 
         // Rename the temporary file to replace the original file
-        fs::rename(tempFilePath, file_path_);
+        fs::rename(tempFilePath, filename);
     }
 
     std::fstream fileStream;
