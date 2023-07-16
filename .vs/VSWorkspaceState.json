@@ -8,9 +8,10 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\algorithm",
     "\\src\\cfgsys",
     "\\util"
   ],
-  "SelectedNode": "\\src\\Model.cpp",
+  "SelectedNode": "\\main.cpp",
   "PreviewInSolutionExplorer": false
 }

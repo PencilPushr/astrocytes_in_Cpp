@@ -11,6 +11,10 @@ file(GLOB source_files CONFIGURE_DEPENDS
             "*.cpp"
             "src/*.cpp"
             "src/*.h"
+            "src/algorithm/*.cpp"
+            "src/algorithm/*.h"
+            "src/cfgsys/*.cpp"
+            "src/cfgsys/*.h"
             "util/*.cpp"
             "util/*.h"
 )

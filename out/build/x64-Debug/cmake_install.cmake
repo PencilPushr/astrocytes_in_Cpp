@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/ajval/Documents/C++/astrocytes_in_Cpp
+# Install script for directory: F:/CPP/astrocytes_in_Cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/ajval/Documents/C++/astrocytes_in_Cpp/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "F:/CPP/astrocytes_in_Cpp/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/ajval/Documents/C++/astrocytes_in_Cpp/out/build/x64-Debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "F:/CPP/astrocytes_in_Cpp/out/build/x64-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
