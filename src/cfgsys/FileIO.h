@@ -35,9 +35,13 @@ public:
         return content;
     }
 
-    void read()
-    {
-        
+    std::string readLine(std::streampos previousIndex = std::ios::beg) {
+        std::string line;
+        fileStream.seekg(previousIndex);
+        if (std::getline(fileStream, line)) {
+            return line;
+        }
+        return ""; // Return an empty string if end of file is reached
     }
 
     void write(const std::string& content) 
